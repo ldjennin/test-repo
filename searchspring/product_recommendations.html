@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>SearchSpring</title>
+        <script src="//cdn.searchspring.net/search/v3/js/searchspring.catalog.js?n4nf1c" currency="USD"  defer></script>
+
+   </head>
+	
+   <body>
+      <p>Product Recommendations</p>
+      <p>Seed product: <input type=text name="product_code" value=""></p>
+     <div class="intellisuggest" name="Product Recommendations" widget-type="viewed" widget-id="av"></div> 
+      <p>Product Recommendations</p>
+
+<script type="text/javascript" src="//cdn.searchspring.net/intellisuggest/is.min.js"></script>
+	<script type="text/javascript">
+	try{
+	    var product_code = "2790";
+	    IntelliSuggest.init({siteId:'n4nf1c', context:'Product/' + product_code, seed:[product_code]});
+	    IntelliSuggest.viewItem({sku:product_code});
+	} catch(err) {}
+</script>
+<!-- SearchSpring Intellisuggest -->
+
+   </body>
+	
+</html>
